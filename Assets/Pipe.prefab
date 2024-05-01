@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2330048105440847794}
   m_Layer: 0
   m_Name: Middle
-  m_TagString: Untagged
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 194729664252461468}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -0.04, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.1594204, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc2a0e9cdf4b07a429507ea702b868a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logic: {fileID: 0}
 --- !u!1 &6126304526064258558
 GameObject:
   m_ObjectHideFlags: 0

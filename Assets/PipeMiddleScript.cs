@@ -11,7 +11,7 @@ public class PipeMiddleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // GameObject.FindGameObjectWithTag("Logic") finds the first GameObject in the hierarchy with the tag "Logic"
+        // finds the FIRST GameObject in the hierarchy with the tag "Logic"
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
