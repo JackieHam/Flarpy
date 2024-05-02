@@ -6,6 +6,9 @@ using UnityEngine;
 public class PipeMiddleScript : MonoBehaviour
 {
     public LogicScript logic;
+    public BoxCollider2D middleBox;
+    public BoxCollider2D topBox;
+    public BoxCollider2D bottomBox;
 
 
     // Start is called before the first frame update
@@ -13,6 +16,9 @@ public class PipeMiddleScript : MonoBehaviour
     {
         // finds the FIRST GameObject in the hierarchy with the tag "Logic"
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+        middleBox.size = new Vector2(2, 15.3f);
+        topBox.size = new Vector2(1.44f, 3.84f);
+        bottomBox.size = new Vector2(1.44f, 3.84f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,4 +28,5 @@ public class PipeMiddleScript : MonoBehaviour
             logic.addScore(1);
         }
     }
+
 }

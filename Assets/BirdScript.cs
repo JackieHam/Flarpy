@@ -7,7 +7,6 @@ public class BirdScript : MonoBehaviour
     public Rigidbody2D myRigidbody;
     public float flapStrength;
     public LogicScript logic;
-    public BoxCollider2D middleBox;
     public bool birdIsAlive = true;
     private int maxYBound = 24;
     private int minYBound = -24;
@@ -16,7 +15,6 @@ public class BirdScript : MonoBehaviour
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-        middleBox = GameObject.FindGameObjectWithTag("Pipe").GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -37,8 +35,7 @@ public class BirdScript : MonoBehaviour
 
     void death() 
     {
-        logic.gameOver();
+        logic.tryGameOver();
         birdIsAlive = false;
-        middleBox.size = new Vector2(0, 0);
     }
 }
