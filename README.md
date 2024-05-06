@@ -1,0 +1,2 @@
+- A re-creation of Flappy Bird following the YouTube video https://www.youtube.com/watch?v=XtQMytORBmM.
+- Currently adding more features to the game and fine-tuning the gameplay.
